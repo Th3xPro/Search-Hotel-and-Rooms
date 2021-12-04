@@ -41,11 +41,17 @@ export default function Room(props) {
         <div className="mb-4">
           {/* DISPLAYING ROOMS based on filter -> selected number of adults and children */}
           {searchByPeople(rooms).map((item) => (
-            <Row key={item.id} className="p-2 border  border-dark">
+            <Row key={item.id} className="p-2 border border-dark">
               <Col className="col-3 text-start">
                 <h4>{item.name}</h4>
-                <p>Adults: {item.occupancy.maxAdults}</p>
-                <p>Children: {item.occupancy.maxChildren}</p>
+                <hr />
+                <p className="mb-0">
+                  <i>Adults:</i> {item.occupancy.maxAdults}
+                </p>
+
+                <p>
+                  <i>Children:</i> {item.occupancy.maxChildren}
+                </p>
               </Col>
               <Col className="col-9 text-start">
                 <p>{item.longDescription}</p>

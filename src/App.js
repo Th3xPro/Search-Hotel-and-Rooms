@@ -41,9 +41,9 @@ const App = () => {
   return (
     <div>
       <div className="d-flex text-center justify-content-center">
-        <Row className="w-50 border border-2 border-dark ">
-          <Col className="col-12 col-xl-4">
-            <div className="star-rating">
+        <Row className="w-25 shadow border border-2 border-dark ">
+          <Col className="col-12 col-xl-4 ">
+            <div className="star-rating mt-3">
               {/* DISPLAYING AND MANAGING STARS */}
               {[...Array(5)].map((star, index) => {
                 index += 1;
@@ -62,31 +62,45 @@ const App = () => {
               })}
             </div>
           </Col>
-          <Col className="col-12 col-xl-4 d-block text-nowrap ">
-            Adults:
-            <button value={adult} onClick={() => setAdult(adult + 1)}>
-              +
-            </button>
-            {adult}
-            <button
-              value={adult}
-              onClick={() => setAdult(adult === 0 ? adult : adult - 1)}
-            >
-              -
-            </button>
+          <Col className="col-12 col-xl-4">
+            <i> Adults:</i>
+            <div className="d-flex text-center justify-content-center">
+              <button
+                className="m-2 "
+                value={adult}
+                onClick={() => setAdult(adult + 1)}
+              >
+                +
+              </button>
+              <h5 className="text-center mt-2">{adult}</h5>
+              <button
+                className="m-2"
+                value={adult}
+                onClick={() => setAdult(adult === 0 ? adult : adult - 1)}
+              >
+                -
+              </button>
+            </div>
           </Col>
           <Col className="col-12 col-xl-4">
-            Childs :
-            <button value={child} onClick={() => setChild(child + 1)}>
-              +
-            </button>
-            {child}
-            <button
-              value={child}
-              onClick={() => setChild(child === 0 ? child : child - 1)}
-            >
-              -
-            </button>
+            Children :
+            <div className="d-flex text-center justify-content-center">
+              <button
+                className="m-2"
+                value={child}
+                onClick={() => setChild(child + 1)}
+              >
+                +
+              </button>
+              <h5 className="text-center mt-2">{child}</h5>
+              <button
+                className="m-2"
+                value={child}
+                onClick={() => setChild(child === 0 ? child : child - 1)}
+              >
+                -
+              </button>
+            </div>
           </Col>
         </Row>
       </div>
@@ -97,7 +111,7 @@ const App = () => {
           {searchByStars(hotels).map((item, id) => (
             <div key={id}>
               {/* HOTEL INFO */}
-              <Row className="p-3 border border-2 border-dark bg-light">
+              <Row className="p-3 border shadow border-2 border-dark bg-light">
                 <Col className="col-3">
                   <SimpleImageSlider
                     width={150}
@@ -109,9 +123,10 @@ const App = () => {
                   />
                 </Col>
                 <Col className="col-5 text-start">
-                  <p>{item.name}</p>
-                  <p>{item.address1}</p>
-                  <p>{item.address2}</p>
+                  <h4>{item.name}</h4>
+                  <i>{item.address1}</i>
+                  <br />
+                  <i>{item.address2}</i>
                 </Col>
                 <Col className="col-4 text-end">
                   {[...Array(parseInt(item.starRating))].map((e, i) => (
