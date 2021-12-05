@@ -34,7 +34,7 @@ $ npm start
 
 ## Quick Look Inside
 
-![image](https://user-images.githubusercontent.com/42244290/144727179-f614ab82-ef5b-4f50-af77-7cf44917d34a.png)
+![image](https://user-images.githubusercontent.com/42244290/144750611-2ba781c6-d3c7-4be4-a5e0-3aec9ea90303.png)
 
 ## Learn More
 
