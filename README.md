@@ -2,8 +2,8 @@
 * [General Info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [Learn More](#learn-more)
 * [Quick Look Inside](#quick-look-inside)
+* [Learn More](#learn-more)
 
 ## General Info
 This React application was created to display hotels with their rooms and ability to filter them by 
@@ -32,6 +32,10 @@ $ npm install react-simple-image-slider --save
 $ npm start
 ```
 
+## Quick Look Inside
+
+![image](https://user-images.githubusercontent.com/42244290/144727179-f614ab82-ef5b-4f50-af77-7cf44917d34a.png)
+
 ## Learn More
 
 <i>Problems I had ?</i>
@@ -41,8 +45,4 @@ So I ended up fetching hotels from first API and in the same time passing ID's f
 <i>It got me into a loop of problems unable to be solved by me</i> </br>
 But then I got an idea to pass the data to another component and fetch it inside him. </br>
 The rest was just basic styling and basic filtering by the user input.
-
-## Quick Look Inside
-
-![image](https://user-images.githubusercontent.com/42244290/144727179-f614ab82-ef5b-4f50-af77-7cf44917d34a.png)
 
