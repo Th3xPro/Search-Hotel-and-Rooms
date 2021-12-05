@@ -21,15 +21,15 @@ Project is created with:
 To run this project, install it locally using npm:
 
 ```
-$ npm install
-$ npm start
+npm install
+npm start
 ```
 OR
 
 ```
-$ npm i axios react-bootstrap
-$ npm install react-simple-image-slider --save
-$ npm start
+npm i axios react-bootstrap
+npm install react-simple-image-slider --save
+npm start
 ```
 
 ## Quick Look Inside
