@@ -63,7 +63,7 @@ const App = () => {
             </div>
           </Col>
           <Col className="col-12 col-xl-4">
-            <i> Adults:</i>
+            <i>Adults :</i>
             <div className="d-flex text-center justify-content-center">
               <button
                 className="m-2 "
@@ -83,7 +83,7 @@ const App = () => {
             </div>
           </Col>
           <Col className="col-12 col-xl-4">
-            Children :
+            <i>Children :</i>
             <div className="d-flex text-center justify-content-center">
               <button
                 className="m-2"
